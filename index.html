@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lindani Ricardo Mabaso | Portfolio</title>
+  <meta name="description" content="Premium software developer portfolio for Lindani Ricardo Mabaso." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div>
+        <div class="eyebrow muted">Portfolio • Deploy Ready</div>
+        <div class="brand-name">Lindani Ricardo Mabaso</div>
+      </div>
+      <div class="nav-actions">
+        <nav class="main-nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-icon">☀</span>
+          <span class="theme-label">Light mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid reveal">
+        <div>
+          <div class="pill">
+            <span>✦</span>
+            Premium Developer Portfolio
+          </div>
+          <h1>
+            Building secure,
+            <span class="gradient-text">scalable software</span>
+            for high-impact systems.
+          </h1>
+          <p class="hero-copy muted">
+            I’m Lindani Mabaso, a software engineer focused on backend engineering, cloud platforms, APIs, and enterprise-grade delivery across fintech and large-scale systems.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#cv">View CV Section</a>
+          </div>
+          <div class="socials" id="socials"></div>
+        </div>
+
+        <div class="card intro-card reveal">
+          <div class="intro-top">
+            <div>
+              <div class="muted small">Currently</div>
+              <div class="intro-title">Software Engineer</div>
+            </div>
+            <div class="status-badge">Available for opportunities</div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-title accent-cyan">Enterprise & Fintech Experience</div>
+            <p class="muted">Experience delivering backend systems in financial services and large-scale commerce environments.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-title accent-pink">Core Stack</div>
+            <p class="muted">Java, Spring Boot, .NET Core, C#, AWS, Azure, Kubernetes, PostgreSQL, CI/CD.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-title accent-blue">Focus Areas</div>
+            <p class="muted">Scalable APIs, cloud architecture, microservices, platform engineering, system reliability, and team leadership.</p>
+          </div>
+
+          <div class="location muted">📍 Centurion, South Africa</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container reveal">
+        <div class="section-header">
+          <div class="section-eyebrow">About</div>
+          <h2>A developer brand built for trust, depth, and impact.</h2>
+          <p class="muted">This version positions you as a polished software engineer with strong enterprise credibility, while still leaving room to grow your public portfolio with more open-source and case-study work.</p>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <h3>Professional Summary</h3>
+            <p class="muted">Software Engineer with 5+ years of experience designing and delivering scalable backend systems using .NET Core, C#, Java, and Spring Boot. Strong expertise in RESTful API development, cloud platforms, and microservices architecture, with proven delivery in financial services and high-performance environments.</p>
+          </div>
+          <div class="card">
+            <h3>What makes this portfolio premium</h3>
+            <ul class="muted nice-list">
+              <li>Executive-style visual hierarchy and clean spacing</li>
+              <li>Motion and hover interactions for a polished modern feel</li>
+              <li>Live GitHub projects with graceful fallback behavior</li>
+              <li>Expandable project cards with video links and short summaries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="section-header">
+          <div class="section-eyebrow">Skills</div>
+          <h2>Core capabilities</h2>
+          <p class="muted">Structured to show depth across backend engineering, cloud delivery, and production systems.</p>
+        </div>
+        <div id="skillsGrid" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container reveal">
+        <div class="section-header">
+          <div class="section-eyebrow">Experience</div>
+          <h2>Career journey</h2>
+          <p class="muted">Presented as a premium timeline to reinforce progression, trust, and seniority.</p>
+        </div>
+        <div id="experienceList" class="experience-list"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container reveal">
+        <div class="section-header">
+          <div class="section-eyebrow">Projects</div>
+          <h2>Featured work</h2>
+          <p class="muted">This section is deploy-ready with live GitHub repositories, plus short explanations and video links for each project card.</p>
+        </div>
+        <div id="projectsStatus" class="projects-status hidden"></div>
+        <div id="projectsGrid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <section id="cv" class="section">
+      <div class="container reveal">
+        <div class="section-header">
+          <div class="section-eyebrow">CV</div>
+          <h2>Curriculum Vitae</h2>
+          <p class="muted">This section includes a downloadable PDF and a summary of your experience and certifications.</p>
+        </div>
+        <div class="card cv-grid">
+          <div>
+            <h3>Lindani Ricardo Mabaso</h3>
+            <p class="muted">Software Engineer (.NET | Java | Cloud | Backend)</p>
+            <div class="cv-stats muted">
+              <div>5+ years of software engineering experience</div>
+              <div>Enterprise systems and financial platforms</div>
+              <div>Cloud: AWS, Azure, GCP</div>
+              <div>Backend: Java, Spring Boot, .NET Core, C#</div>
+            </div>
+            <p class="muted">
+              Education: BSc Honours Computer Science & IT – University of KwaZulu-Natal<br />
+              Certifications: Microsoft Azure Fundamentals (2023), Google Cloud Fundamentals (2025), MTA Software Development Fundamentals
+            </p>
+          </div>
+          <div class="card card-inner">
+            <div class="muted small">CV actions</div>
+            <a class="btn btn-primary full-width" href="Lindani_Mabaso_Final_CV.pdf" download>Download CV</a>
+            <p class="muted small">This ZIP already includes your CV PDF file.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <div class="card contact-card">
+          <div>
+            <div class="section-eyebrow">Contact</div>
+            <h2>Let’s build something meaningful.</h2>
+            <p class="muted">This section is ready for direct contact links, downloadable CV access, and future additions like a form or live availability indicator.</p>
+          </div>
+          <div id="contactLinks" class="contact-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
